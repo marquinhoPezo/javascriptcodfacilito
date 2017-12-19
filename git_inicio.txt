@@ -73,6 +73,10 @@ git remote remove origin -> Para desconectarnos del proyecto en github
 
 git push origin master -> Aca pasamos el proyecto local  a github
 
+/otros/
+http://www.intarcesoft.com.ve/es/cursos/curso-programacion-y-desarrollo-con-javascript.html
+//////
+
 
 
 
