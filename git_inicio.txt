@@ -1,0 +1,66 @@
+Primer presentar a git : 
+git config --global user.name "MarquinhoPezo"
+
+Despues poner el correo : 
+git config --global user.correo "marq_253@hotmail.com"
+
+PARA Poner colores a las acciones que realizamos
+git config --global color.ui true
+/**********************************************************************/
+Nota : Importante -> para saber nuestro historial de configuraciones : 
+
+git config --global --list 
+/**********************************************************************/
+Empezamos ahora el aprendizaje : 
+$git init -> aca decimos a git inicie el proyecto, que empiece a monitorear el proyecto a todos nuestros cambios
+
+git status -> vee el estado del proyecto
+
+git add -A -> agrega todo el proyecto 
+
+git add nombre_de_archivo(ejem : index.php ) -> agrega solo el archivo en mencion.
+
+git commit -m "Mensaje" -> para agregar un mensaje al cambio que estamos agregando 
+
+git log -> nos da una lista de todos nuestros commits con su respectiva informacion
+
+git checkout -> podemos viajar en el tiempo a traves de los  commit 
+
+/**********************************************************************/
+git checkout master -> Para volver a la rama master del proyecto
+/**********************************************************************/
+git reset -> regresa al tiempo pero mata los commit->(muy peligroso)
+
+Existen tres tipos de git reset : 
+-> git reset --soft -> El git reset mas simple y que no toca nuestro "Working Area"(osea no toca nuestro codigo) (No se mete con nuestro codigo)
+-> git reset --mixed -> Este reset es muy raro.
+-> git reset --hard -> borra todo es muy peligroso.
+
+-------------------------------------------------------------------------
+git log > commits.txt -> te exporta un .txt 
+
+
+
+
+/****************** RAMAS **************************************/
+------------------------------Importante---------------- 
+Head -> es el commit donde nos encontramos ahora.
+Ramas -> Es una linea de tiempo en nuestro proyecto, que nos sirven para 
+         arreglar errores, experimentar, hacer grandes cambios, etc.
+Rama Master -> La rama master es en donde comenzamos a trabajar, es la 
+               principal y estable del proyecto. 
+-------------------------------------------------------------------
+git branch -> nos muestra las ramas. 
+
+git branch nombre_de_la_RAMA -> Para crear una rama
+
+git checkout nombre_de_la_RAMA -> Para movernos a la rama deseada.
+
+git branch -D nombre_de_la_RAMA -> Para borrar la rama   
+
+git merge nombre_de_la_rama_a_absorver -> para absorver la rama a desear , 					  pero debemos estar en la rama 					  	  principal( para que no sea 					  absorvida)
+
+git checkout -b nombre_de_la_rama_a_crear -> con esto creamos una nueva 					     rama y al mismo tiempo la nos                                              movemos a esa rama creada.
+
+http://www.intarcesoft.com.ve/es/cursos/curso-programacion-y-desarrollo-con-javascript.html
+ 
