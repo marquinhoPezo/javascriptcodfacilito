@@ -7,7 +7,7 @@ git config --global user.correo "marq_253@hotmail.com"
 PARA Poner colores a las acciones que realizamos
 git config --global color.ui true
 /**********************************************************************/
-Nota : Importante -> para saber nuestro historial de configuraciones : 
+Nota : Importante -> para sabegit r nuestro historial de configuraciones : 
 
 git config --global --list 
 /**********************************************************************/
@@ -21,7 +21,9 @@ git add -A -> agrega todo el proyecto
 git add nombre_de_archivo(ejem : index.php ) -> agrega solo el archivo en mencion.
 
 git commit -m "Mensaje" -> para agregar un mensaje al cambio que estamos agregando 
-
+/**********************************************************************/
+git clone url_del_proyecto_en_github -> Para descargar un proyecto 
+/**********************************************************************/
 git log -> nos da una lista de todos nuestros commits con su respectiva informacion
 
 git checkout -> podemos viajar en el tiempo a traves de los  commit 
@@ -49,7 +51,6 @@ Ramas -> Es una linea de tiempo en nuestro proyecto, que nos sirven para
          arreglar errores, experimentar, hacer grandes cambios, etc.
 Rama Master -> La rama master es en donde comenzamos a trabajar, es la 
                principal y estable del proyecto. 
-			   http://www.intarcesoft.com.ve/es/cursos/curso-programacion-y-desarrollo-con-javascript.html
 -------------------------------------------------------------------
 git branch -> nos muestra las ramas. 
 
@@ -59,7 +60,7 @@ git checkout nombre_de_la_RAMA -> Para movernos a la rama deseada.
 
 git branch -D nombre_de_la_RAMA -> Para borrar la rama   
 
-git merge nombre_de_la_rama_a_absorver -> para absorver la rama a desear , pero debemos estar en la rama 					  	  principal( para que no sea 					  absorvida)
+git merge nombre_de_la_rama_a_absorver -> para absorver la rama a desear , 					  pero debemos estar en la rama 					  	  principal( para que no sea 					  absorvida)
 
 git checkout -b nombre_de_la_rama_a_crear -> con esto creamos una nueva 					     rama y al mismo tiempo la nos                                              movemos a esa rama creada.
 /************************************************************************************************/
@@ -73,11 +74,20 @@ git remote remove origin -> Para desconectarnos del proyecto en github
 
 git push origin master -> Aca pasamos el proyecto local  a github
 
+/****************************** Issues  **************************************/
+Los issues son una forma de continuar,mejorar o solucionar un error en nuestros repositorios (proyectos)
+/************************************************************************************************/
+/****************************************** TAGS ***********************************************/
+TAGS -> Son simples puntos especificos en la historia de nuestro proyecto y se usan para marcar alguna version del mismo.
+/************************************************************************************************/
+git tag -a version_del_proyecto -m "el mensaje" el_codigo_de_nuestro_log -> Para subir nuestro tag a git pero no todavia a github
+git push origin codigo_shack -> codigo_shach:commit 546tjk54ltl46646sfsf456sd
+git push origin --tags -> Para subir todos los tags del proyecto
+
+
 /otros/
 http://www.intarcesoft.com.ve/es/cursos/curso-programacion-y-desarrollo-con-javascript.html
 //////
-
-
 
 
  
